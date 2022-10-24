@@ -8,6 +8,14 @@ pub enum ContractError {
 
     #[error("Unauthorized")]
     Unauthorized {},
-    // Add any other custom errors you like here.
+
+    #[error("The amount of flowers left is not enough!")]
+    NotEnoughAmount {},
+
+    #[error("ID does not exist (id {id})")]
+    IdNotExists { id: String },
+
+    #[error("ID has been taken (id {id})")]
+    IdTaken { id: String },
     // Look at https://docs.rs/thiserror/1.0.21/thiserror/ for details.
 }

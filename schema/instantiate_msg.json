@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "InstantiateMsg",
+  "type": "object",
+  "required": [
+    "amount",
+    "name",
+    "price"
+  ],
+  "properties": {
+    "amount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Flower",
+  "type": "object",
+  "required": [
+    "amount",
+    "id",
+    "name",
+    "price"
+  ],
+  "properties": {
+    "amount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}
